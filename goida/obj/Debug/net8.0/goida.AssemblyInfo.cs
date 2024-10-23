@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("goida")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf172412cbbe4e07569da4096e3f29fc09a1a082")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9951b1f093fb3f20d147fe15ae5c197711e3682")]
 [assembly: System.Reflection.AssemblyProductAttribute("goida")]
 [assembly: System.Reflection.AssemblyTitleAttribute("goida")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

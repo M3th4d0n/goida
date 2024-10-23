@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using goida.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 
 namespace goida.Controllers
@@ -51,22 +53,28 @@ namespace goida.Controllers
 	        // Проверка на null или пустое содержимое
 	        if (string.IsNullOrWhiteSpace(messageContent))
 	        {
-		        // Обработка ошибки: сообщение не должно быть пустым
 		        ModelState.AddModelError("Message", "Сообщение не может быть пустым.");
 		        return RedirectToAction("Index"); // Вернуться на страницу чата
 	        }
 
 	        var userId = GetUserId(); // Получение идентификатора пользователя
+	        var roomId = HttpContext.Session.GetInt32("RoomId"); // Получение идентификатора комнаты из сессии
+
 	        var message = new Message
 	        {
 		        UserName = HttpContext.Session.GetString("UserName"),
 		        Content = messageContent,
 		        Time = DateTime.Now,
-		        UserId = userId // Устанавливаем идентификатор пользователя
+		        UserId = userId,
 	        };
 
 	        await _context.Messages.AddAsync(message);
 	        await _context.SaveChangesAsync(); // Сохранение изменений в базе данных
+
+	        if (roomId.HasValue)
+	        {
+		        return RedirectToAction("ChatRoom", new { id = roomId.Value });
+	        }
 
 	        return RedirectToAction("Index", "Chat");
         }

@@ -1,0 +1,9 @@
+@{
+    ViewBag.Title = "DM Created";
+}
+
+<h2>Direct Message Created!</h2>
+<p>Share this link with the person you want to chat with:</p>
+<p><a href="@ViewBag.ChatLink">@ViewBag.ChatLink</a></p>
+
+<a href="@Url.Action("Index", "Chat")" class="btn btn-primary">Back to Chat</a>

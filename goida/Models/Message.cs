@@ -9,6 +9,7 @@ namespace goida.Models
         public string UserName { get; set; }
         public DateTime Time { get; set; }
         public int UserId { get; set; }
+
     }
 
 }
