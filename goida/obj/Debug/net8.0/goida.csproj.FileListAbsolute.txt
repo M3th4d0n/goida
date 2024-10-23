@@ -54,3 +54,4 @@ C:\Users\nulll\source\repos\goida\goida\bin\Debug\net8.0\runtimes\win-x64\native
 C:\Users\nulll\source\repos\goida\goida\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
 C:\Users\nulll\source\repos\goida\goida\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 C:\Users\nulll\source\repos\goida\goida\obj\Debug\net8.0\goida.sourcelink.json
+C:\Users\nulll\source\repos\goida\goida\bin\Debug\net8.0\Newtonsoft.Json.dll

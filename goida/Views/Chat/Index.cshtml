@@ -30,7 +30,7 @@
                     <strong><a class="username" href="/user/@message.UserId">@message.UserName</a></strong>: @message.Content
                     <div class="message-time"><em>(@message.Time)</em></div>
 
-                    @* Иконка удаления для администраторов *@
+                    
                     @if (Context.Session.GetString("UserRole") == "admin")
                     {
                         <form method="post" action="/Chat/DeleteMessage" style="display: inline;">
