@@ -26,12 +26,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Chat/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
+[C:/Users/nulll/source/repos/goida/goida/Views/Admin/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Chat/SetUserName.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxTZXRVc2VyTmFtZS5jc2h0bWw=
+[C:/Users/nulll/source/repos/goida/goida/Views/Chat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nulll/source/repos/goida/goida/Views/Home/Index.cshtml]
@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nulll/source/repos/goida/goida/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nulll/source/repos/goida/goida/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nulll/source/repos/goida/goida/Views/_ViewImports.cshtml]

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model goida.Models.User
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -12,6 +13,7 @@
     @if (Context.Session.GetString("UserName") != null)
     {
         <p class="text-center text-light">Welcome, <strong>@Context.Session.GetString("UserName")</strong>!</p>
+        <p class="text-center text-light"><strong>Role:</strong> @Context.Session.GetString("Role")</p>
         <div class="text-center mt-3">
             <a href="/Account/Logout" class="btn btn-danger">Logout</a>
         </div>

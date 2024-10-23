@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System;
 
 namespace goida.Models
 {
@@ -12,5 +13,9 @@ namespace goida.Models
         [Required(ErrorMessage = "Password is required.")]
         [DataType(DataType.Password)]
         public string Password { get; set; } // Обычный пароль
+
+        public string? Role { get; set; }
+
+        public DateTime RegistrationDate { get; set; } = DateTime.UtcNow; // Дата регистрации по умолчанию
     }
 }

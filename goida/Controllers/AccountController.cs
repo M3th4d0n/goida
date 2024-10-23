@@ -26,7 +26,6 @@ namespace goida.Controllers
         {
             if (ModelState.IsValid)
             {
-                
                 var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Nickname == user.Nickname);
                 if (existingUser != null)
                 {
@@ -34,7 +33,9 @@ namespace goida.Controllers
                     return View(user);
                 }
 
-                
+                user.Role = "member"; // Присваиваем роль "member"
+                user.RegistrationDate = DateTime.UtcNow; // Устанавливаем текущую дату регистрации
+
                 await _context.Users.AddAsync(user);
                 await _context.SaveChangesAsync();
 
@@ -43,6 +44,7 @@ namespace goida.Controllers
             }
             return View(user);
         }
+
 
         
 
@@ -55,12 +57,23 @@ namespace goida.Controllers
         [HttpPost]
         public IActionResult Login(string nickname, string password) 
         {
+            // Ищем пользователя по никнейму и паролю
             var user = _context.Users.FirstOrDefault(u => u.Nickname == nickname && u.Password == password); 
-            
-           
-            HttpContext.Session.SetString("UserName", user.Nickname);
-            return RedirectToAction("Index", "Chat");
+
+            if (user != null)
+            {
+                // Устанавливаем значения в сессии
+                HttpContext.Session.SetString("UserName", user.Nickname);
+                HttpContext.Session.SetString("UserRole", user.Role); // Сохраняем роль пользователя в сессии
+
+                return RedirectToAction("Index", "Chat");
+            }
+
+            // Если пользователь не найден, можно добавить сообщение об ошибке
+            ModelState.AddModelError("", "Invalid login attempt.");
+            return View(); // Вернуть ту же страницу входа, чтобы показать ошибку
         }
+
 
         
         public IActionResult Logout()

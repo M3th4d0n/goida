@@ -38,13 +38,20 @@
             right: 15px; 
             color: #6c757d; 
         }
+        .username {
+            color: #007bff; /* Цвет для кликабельного ника */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+        .username:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
     </style>
 </head>
 <body>
     <div class="chat-container">
         <form method="post" action="/Chat/SendMessage" class="mb-3">
             <div class="input-group">
-                <input type="text" name="message" class="form-control" placeholder="Enter your message" required />
+                <input type="text" name="messageContent" class="form-control" placeholder="Enter your message" required />
                 <div class="input-group-append">
                     <button class="btn btn-dark" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
                 </div>
@@ -57,7 +64,7 @@
                 foreach (var message in Model.OrderByDescending(m => m.Time))
                 {
                     <div class="message @(message.UserName == "YourUsername" ? "sender" : "receiver")">
-                        <strong>@message.UserName</strong>: @message.Content
+                        <strong><a class="username" href="/user/@message.UserId">@message.UserName</a></strong>: @message.Content
                         <div class="message-time"><em>(@message.Time)</em></div>
                     </div>
                 }
