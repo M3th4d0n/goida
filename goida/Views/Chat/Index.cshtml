@@ -7,75 +7,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
-    <style>
-        .chat-container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .message {
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            position: relative; 
-        }
-        .message.sender {
-            background-color: #007bff;
-            color: white;
-            text-align: right;
-        }
-        .message.receiver {
-            background-color: #e9ecef;
-            text-align: left;
-        }
-        .message-time {
-            font-size: 0.8em; 
-            position: absolute;
-            bottom: 10px;
-            right: 15px; 
-            color: #6c757d; 
-        }
-        .username {
-            color: #007bff; 
-            text-decoration: none; 
-        }
-        .username:hover {
-            text-decoration: underline; 
-        }
-    </style>
 </head>
 <body>
-    <div class="chat-container">
-        <form method="post" action="/Chat/SendMessage" class="mb-3">
-            <div class="input-group">
-                <input type="text" name="messageContent" class="form-control" placeholder="Enter your message" required />
-                <div class="input-group-append">
-                    <button class="btn btn-dark" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
-                </div>
+<div class="chat-container">
+    <form method="post" action="/Chat/SendMessage" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="messageContent" class="form-control" placeholder="Введите ваше сообщение" required />
+            <div class="input-group-append">
+                <button class="btn btn-dark" type="submit"><i class="fas fa-paper-plane"></i> Отправить</button>
             </div>
-        </form>
-
-        <div class="chat-messages">
-            @if (Model != null && Model.Any())
-            {
-                foreach (var message in Model.OrderByDescending(m => m.Time))
-                {
-                    <div class="message @(message.UserName == "YourUsername" ? "sender" : "receiver")">
-                        <strong><a class="username" href="/user/@message.UserId">@message.UserName</a></strong>: @message.Content
-                        <div class="message-time"><em>(@message.Time)</em></div>
-                    </div>
-                }
-            }
-            else
-            {
-                <div class="message text-center">No messages yet</div>
-            }
         </div>
-    </div>
+    </form>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <div class="chat-messages">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var message in Model.OrderByDescending(m => m.Time))
+            {
+                <div class="message @(message.UserName == "YourUsername" ? "sender" : "receiver")">
+                    <strong><a class="username" href="/user/@message.UserId">@message.UserName</a></strong>: @message.Content
+                    <div class="message-time"><em>(@message.Time)</em></div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="message text-center">Пока нет сообщений</div>
+        }
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
