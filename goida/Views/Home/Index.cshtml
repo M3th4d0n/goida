@@ -1,6 +1,26 @@
 ﻿@model goida.Models.User
 @{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
+
+var quotes = new List<string>
+{
+    "абоба",
+    "бебра",
+    "ХАХАХАХАХАХААХ ОНО КОМИТИТЬСЯ",
+    "выпустите из подвала пожаласта.. ",
+    "Почему нет игры где ты типо грибок и ты прыгаешь на супер марио?\n",
+    "рассвет..",
+    "В пять утра, когда мир спит, я программирую, как будто от этого зависит жизнь — и, похоже, так и есть\n," +
+    "гоооол",
+    "https://github.com/m0rp3x/ZalupaHumana",
+    "https://m0rp3x.github.io/ZalupaHumana_WebSite/",
+    "в сурсах этого сайта ни одной строки которую написал не чат гпт",
+    "пивка бы",
+    "гыгыгыгыгы"
+};
+
+Random random = new Random();
+var randomQuote = quotes[random.Next(quotes.Count)];
 }
 
 <div id="loader" class="loader">
@@ -12,20 +32,20 @@
 
     @if (Context.Session.GetString("UserName") != null)
     {
-        <p class="text-center text-light">Welcome, <strong>@Context.Session.GetString("UserName")</strong>!</p>
-        <p class="text-center text-light"><strong>Role:</strong> @Context.Session.GetString("Role")</p>
-        <div class="text-center mt-3">
-            <a href="/Account/Logout" class="btn btn-danger">Logout</a>
-        </div>
+    <p class="text-center text-light">Welcome, <strong>@Context.Session.GetString("UserName")</strong>!</p>
+    <div class="text-center mt-3">
+        <a href="/Account/Logout" class="btn btn-danger">Logout</a>
+    </div>
     }
     else
     {
-        <div class="text-center">
-            <a href="/Account/Login" class="btn btn-dark">Login</a>
-            <a href="/Account/Register" class="btn btn-dark">Register</a>
-        </div>
+    <div class="text-center">
+        <a href="/Account/Login" class="btn btn-dark">Login</a>
+        <a href="/Account/Register" class="btn btn-dark">Register</a>
+    </div>
 
-        <p class="text-center text-muted mt-4">Please log in or register to continue.</p>
+    <p class="text-center text-muted mt-4">Please log in or register to continue.</p>
+    <p class="text-center text-muted mt-4">@randomQuote</p>
     }
 </div>
 
@@ -37,8 +57,8 @@
         "Transpiling code...",
         "Minifying assets...",
         "Optimizing performance...",
-        "я надеюсь это не будут читать", 
-        "но а в друг.. гойда!",
+        "я надеюсь это не будут читать",
+        "ну а в друг.. гойда!",
         "Ready to go!",
     ];
 
@@ -50,7 +70,7 @@
         if (index < messages.length) {
             debugOutput.textContent += messages[index] + '\n';
             index++;
-            setTimeout(displayMessages, 500);
+            setTimeout(displayMessages, 200);
         } else {
             setTimeout(() => {
                 const loader = document.getElementById('loader');
@@ -59,8 +79,8 @@
                     loader.style.display = 'none';
                     content.style.display = 'block';
                     document.body.style.overflow = 'auto';
-                }, 1000);
-            }, 1000);
+                }, 200);
+            }, 200);
         }
     }
 
@@ -74,7 +94,7 @@
         font-family: 'Arial', sans-serif;
         overflow: hidden;
     }
-    
+
     .loader {
         position: fixed;
         top: 0;
