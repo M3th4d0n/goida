@@ -20,7 +20,7 @@ namespace goida.Controllers
             // Проверяем, что роль пользователя - admin
             if (HttpContext.Session.GetString("UserRole") != "admin")
             {
-                return RedirectToAction("AccessDenied", "Account"); // Можно создать отдельное действие для отказа в доступе
+                return RedirectToAction("AccessDenied", "Home");
             }
 
             var users = _context.Users.ToList();
@@ -33,10 +33,10 @@ namespace goida.Controllers
             var user = await _context.Users.FindAsync(userId);
             if (user != null)
             {
-                user.Role = newRole; // Изменяем роль пользователя
-                await _context.SaveChangesAsync(); // Сохраняем изменения
+                user.Role = newRole; 
+                await _context.SaveChangesAsync();
             }
-            return RedirectToAction("UserList"); // Возвращаемся к списку пользователей
+            return RedirectToAction("UserList");
         }
 
         public async Task<IActionResult> UserProfile(int id)

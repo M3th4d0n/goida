@@ -33,8 +33,8 @@ namespace goida.Controllers
                     return View(user);
                 }
 
-                user.Role = "member"; // Присваиваем роль "member"
-                user.RegistrationDate = DateTime.UtcNow; // Устанавливаем текущую дату регистрации
+                user.Role = "member"; 
+                user.RegistrationDate = DateTime.UtcNow; 
 
                 await _context.Users.AddAsync(user);
                 await _context.SaveChangesAsync();

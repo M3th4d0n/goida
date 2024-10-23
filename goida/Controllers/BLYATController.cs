@@ -6,7 +6,7 @@ namespace goida.Controllers
     {
         public IActionResult PENIS()
         {
-            return View(); // Возвращаем представление с названием "PENIS"
+            return View();
         }
     }
 }

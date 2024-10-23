@@ -24,41 +24,41 @@ namespace goida.Controllers
 	        string userName = HttpContext.Session.GetString("UserName");
 	        if (string.IsNullOrEmpty(userName))
 	        {
-		        // Замените "SetUserName" на "Register", "Account" укажите имя вашего контроллера регистрации
+		        
 		        return RedirectToAction("Register", "Account");
 	        }
 
-	        // Получаем все сообщения из базы данных и сортируем их по времени
+	        
 	        var messages = _context.Messages.OrderByDescending(m => m.Time).ToList();
-	        return View(messages); // Передаем сообщения в представление
+	        return View(messages);
         }
 
 
         private int GetUserId()
         {
-	        // Получаем имя пользователя из сессии
+	        
 	        string userName = HttpContext.Session.GetString("UserName");
     
-	        // Ищем пользователя в базе данных по имени
+	        
 	        var user = _context.Users.FirstOrDefault(u => u.Nickname == userName);
     
-	        // Если нашли, возвращаем его ID, иначе 0 или выбрасываем исключение
-	        return user?.Id ?? 0; // Здесь 0 — это условное значение, можно выбрасывать исключение или возвращать null
+	        
+	        return user?.Id ?? 0; 
         }
 
 
         [HttpPost]
         public async Task<IActionResult> SendMessage(string messageContent)
         {
-	        // Проверка на null или пустое содержимое
+	       
 	        if (string.IsNullOrWhiteSpace(messageContent))
 	        {
 		        ModelState.AddModelError("Message", "Сообщение не может быть пустым.");
-		        return RedirectToAction("Index"); // Вернуться на страницу чата
+		        return RedirectToAction("Index"); 
 	        }
 
-	        var userId = GetUserId(); // Получение идентификатора пользователя
-	        var roomId = HttpContext.Session.GetInt32("RoomId"); // Получение идентификатора комнаты из сессии
+	        var userId = GetUserId(); 
+	        var roomId = HttpContext.Session.GetInt32("RoomId");
 
 	        var message = new Message
 	        {
@@ -69,7 +69,7 @@ namespace goida.Controllers
 	        };
 
 	        await _context.Messages.AddAsync(message);
-	        await _context.SaveChangesAsync(); // Сохранение изменений в базе данных
+	        await _context.SaveChangesAsync(); 
 
 	        if (roomId.HasValue)
 	        {
@@ -82,22 +82,22 @@ namespace goida.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteMessage(int id)
         {
-	        // Проверяем, является ли пользователь администратором
+	        
 	        if (HttpContext.Session.GetString("UserRole") != "admin")
 	        {
-		        return Forbid();  // Если роль не admin, доступ запрещен
+		        return Forbid();  
 	        }
 
-	        // Ищем сообщение по ID
+	        
 	        var message = await _context.Messages.FindAsync(id);
 	        if (message == null)
 	        {
-		        return NotFound();  // Сообщение не найдено
+		        return NotFound();  
 	        }
 
 	        // Удаляем сообщение
 	        _context.Messages.Remove(message);
-	        await _context.SaveChangesAsync();  // Сохраняем изменения
+	        await _context.SaveChangesAsync();
 
 	        return RedirectToAction("Index");
         }

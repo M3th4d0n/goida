@@ -9,71 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = goida
 build_property.RootNamespace = goida
-build_property.ProjectDir = C:\Users\nulll\source\repos\goida\goida\
+build_property.ProjectDir = C:\Users\nulll\RiderProjects\goida\goida\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nulll\source\repos\goida\goida
+build_property.MSBuildProjectDirectory = C:\Users\nulll\RiderProjects\goida\goida
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Account/Login.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Account/Register.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Admin/UserList.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Admin/UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/BLYAT/PENIS.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/BLYAT/PENIS.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQkxZQVRcUEVOSVMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Chat/Index.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Chat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Home/Index.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Home/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Home/Privacy.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/PrivateChat/DmCreated.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/PrivateChat/DmCreated.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpdmF0ZUNoYXRcRG1DcmVhdGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/PrivateChat/PrivateChatRoom.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/PrivateChat/PrivateChatRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpdmF0ZUNoYXRcUHJpdmF0ZUNoYXRSb29tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Shared/Error.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/User/Profile.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/User/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/_ViewImports.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/_ViewStart.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nulll/source/repos/goida/goida/Views/Shared/_Layout.cshtml]
+[C:/Users/nulll/RiderProjects/goida/goida/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l3ozkmv07f
