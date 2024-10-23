@@ -15,6 +15,10 @@
     <EmbeddedResource Remove="Views\Новая папка\**" />
     <None Remove="Views\Новая папка1\**" />
     <None Remove="Views\Новая папка\**" />
+    <Compile Remove="Views\PIZDEC\**" />
+    <EmbeddedResource Remove="Views\PIZDEC\**" />
+    <Content Remove="Views\PIZDEC\**" />
+    <None Remove="Views\PIZDEC\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,112 @@
+@page
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG DICK</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Центрирует по горизонтали */
+            align-items: center; /* Центрирует по вертикали */
+            height: 100vh; /* Занимает всю высоту экрана */
+            margin: 0; /* Убирает отступы */
+        }
+        .stage {
+            position: relative; /* Позволяет позиционировать элементы внутри */
+            width: 400px; /* Ширина для центрации */
+            height: 400px; /* Высота для центрации */
+        }
+        .dick {
+            position: absolute;
+            top: 100px; /* Отступ от верхней части stage */
+            left: 50%; /* Центрирует по горизонтали */
+            transform: translateX(-50%); /* Корректирует смещение для центрирования */
+            width: 200px; /* Исходная ширина */
+            height: 200px; /* Исходная высота */
+        }
+        .bollock {
+            width: 50px; /* Исходный размер яиц */
+            height: 50px; /* Исходный размер яиц */
+            position: absolute;
+            border-radius: 50px;
+            border-right: 2px solid #000000;
+            border-top: 2px solid #000000;
+            background: #ffffff;
+            z-index: 1;
+        }
+        .left {
+            left: -50px; /* Исходная позиция для увеличения */
+            border-right: none;
+            border-left: 2px solid #000000;
+            border-top: 2px solid #000000;
+        }
+        .shaft {
+            border-top: 2px solid #000000;
+            border-left: 2px solid #000000;
+            border-right: 2px solid #000000;
+            width: 40px; /* Исходная ширина ствола */
+            height: 150px; /* Исходная высота ствола */
+            position: absolute;
+            border-radius: 50px;
+            left: -20px; /* Исходная позиция для ствола */
+            top: -125px; /* Исходная позиция для ствола */
+            transform-origin: 50% bottom;
+        }
+        .hl {
+            width: 19px; /* Исходный размер левой части */
+            height: 18px; /* Исходный размер левой части */
+            border-right: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            float: left;
+            border-radius: 50px 0px 0px 0px;
+        }
+        .hr {
+            width: 19px; /* Исходный размер правой части */
+            height: 18px; /* Исходный размер правой части */
+            border-bottom: 2px solid #000000;
+            float: left;
+            border-radius: 0px 50px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="dick">
+            <div class="bollock left"></div>
+            <div class="bollock"></div>
+            <div class="shaft">
+                <div class="hl"></div>
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var shaft = $(".shaft"); 
+        var dick = $(".dick");
+        var angle = 0; // Инициализация угла
+
+        Number.prototype.map = function (istart, istop, ostart, ostop) {
+            return ostart + (ostop - ostart) * ((this - istart) / (istop - istart));
+        };
+
+        function rotate() {
+            setInterval(function () {
+                angle += 0.03; // Увеличение угла для более плавной анимации
+                shaft.css("transform", "rotate(" + (Math.sin(angle) * 25) + "deg)");
+                dick.css("transform", "scale(" + Math.abs(Math.sin(angle)).map(0, 1, 0.8, 1) + ")");
+            }, 16); // Частота обновления для плавной анимации
+        }
+
+        rotate();
+    </script>
+</body>
+</html>
