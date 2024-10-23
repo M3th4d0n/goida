@@ -1,16 +1,23 @@
 using goida.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
-
+using System.Net;
+using System.Net.Http.Headers;
 var builder = WebApplication.CreateBuilder(args);
 
 
+
+
+
+builder.Services.AddHttpClient<GitHubService>(client =>
+{
+    client.DefaultRequestHeaders.Add("User-Agent", "C# App");
+    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "thx github security<3");
+});
+
+builder.Services.AddMemoryCache(); // Добавляем IMemoryCache
 builder.Services.AddControllersWithViews();
 
-
-
-
-builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

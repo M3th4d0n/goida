@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "_Layout";
+    int commitCount = ViewData["CommitCount"] != null ? (int)ViewData["CommitCount"] : 0;
+    int lineCount = ViewData["LineCount"] != null ? (int)ViewData["LineCount"] : 0;
+    var commits = ViewData["Commits"] as List<goida.Models.GitHubService.Commit>; // Приводим к нужному типу
+}
+<html>
+<!DOCTYPE html>
+<head>
+    <title>GitHub Repository Stats</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        td {
+            white-space: nowrap; /* Предотвращаем перенос строк */
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>GitHub Repository Statistics</h1>
+    <p>Total Commits: <span id="commitCount">@commitCount</span></p>
+    <p>Total Lines of Code: ~<span id="lineCount">@lineCount</span></p>
+    
+    <h2>Commit History</h2>
+    @if (commits != null && commits.Count > 0)
+    {
+        <table>
+            <thead>
+            <tr>
+                <th>Author</th>
+                <th>Message</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var commit in commits)
+            {
+                <tr>
+                    <td>@commit.Author</td>
+                    <td>@(commit.Message.Length > 50 ? commit.Message.Substring(0, 50) + "..." : commit.Message)</td>
+                    <td>@commit.Date.AddHours(3).ToString("dd MMM HH:mm")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No commits found.</p>
+    }
+</div>
+</body>
+</html>

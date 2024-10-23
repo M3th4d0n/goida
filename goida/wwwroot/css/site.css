@@ -1,6 +1,6 @@
 /* Оставляем цвета навбара и другие элементы */
 html {
-  height: 100%;
+  height: max-content;
   font-size: 14px;
 }
 
@@ -147,4 +147,65 @@ body {
 }
 .delete-icon:hover {
   color: #a71d2a;
+}
+/* Новый контейнер для статистики */
+.stats-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-height: 80vh; /* Максимальная высота контейнера */
+  overflow-y: auto;
+}
+
+/* Заголовки */
+h1, h2 {
+  color: #58a6ff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Стили таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: auto;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #58a6ff;
+  text-align: left;
+}
+
+table th {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #58a6ff;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Стили для кнопок */
+.btn-custom {
+  background-color: #58a6ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: #4292f0;
+}
+
+/* Стиль для сообщений об ошибках */
+.text-danger {
+  color: #ff4d4f;
+  text-align: center;
 }
