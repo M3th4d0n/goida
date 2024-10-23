@@ -1,0 +1,256 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nulll\\source\\repos\\goida\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\views\\chat\\setusername.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\views\\chat\\setusername.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\views\\chat\\setusername.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\views\\chat\\setusername.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\models\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\models\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|c:\\users\\nulll\\source\\repos\\goida\\goida\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1FBD95-2E77-458F-A4F9-993B5B82DCC9}|goida\\goida.csproj|solutionrelative:goida\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\User.cs",
+              "RelativeDocumentMoniker": "goida\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\User.cs",
+              "RelativeToolTip": "goida\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T18:26:21.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "goida\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "goida\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T21:20:06.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "goida\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "goida\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T21:19:25.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SetUserName.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Chat\\SetUserName.cshtml.cs",
+              "RelativeDocumentMoniker": "goida\\Views\\Chat\\SetUserName.cshtml.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Chat\\SetUserName.cshtml.cs",
+              "RelativeToolTip": "goida\\Views\\Chat\\SetUserName.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:19:48.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "goida\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "goida\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:18:23.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\appsettings.json",
+              "RelativeDocumentMoniker": "goida\\appsettings.json",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\appsettings.json",
+              "RelativeToolTip": "goida\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-22T18:48:13.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "goida\\Models\\Message.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\Message.cs",
+              "RelativeToolTip": "goida\\Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T18:47:17.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChatContext.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\ChatContext.cs",
+              "RelativeDocumentMoniker": "goida\\Models\\ChatContext.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\ChatContext.cs",
+              "RelativeToolTip": "goida\\Models\\ChatContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T18:42:16.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Program.cs",
+              "RelativeDocumentMoniker": "goida\\Program.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Program.cs",
+              "RelativeToolTip": "goida\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T18:36:11.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SetUserName.cshtml",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Chat\\SetUserName.cshtml",
+              "RelativeDocumentMoniker": "goida\\Views\\Chat\\SetUserName.cshtml",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Chat\\SetUserName.cshtml",
+              "RelativeToolTip": "goida\\Views\\Chat\\SetUserName.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T18:31:50.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Chat\\Index.cshtml",
+              "RelativeDocumentMoniker": "goida\\Views\\Chat\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Chat\\Index.cshtml",
+              "RelativeToolTip": "goida\\Views\\Chat\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T18:06:11.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "goida\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "goida\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T21:14:49.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "goida\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "goida\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T19:15:05.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "goida\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\nulll\\source\\repos\\goida\\goida\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "goida\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwC0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T18:02:58.617Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+html {
+  height: 100%;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  outline: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #010409;
+}
+
+/* Заменяем цвет навигационной панели */
+.navbar {
+  background-color: #010409 !important;
+}
+
+/* Цвет ссылок в навигации и при наведении */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #c9d1d9; /* Основной цвет текста */
+}
+
+.navbar .nav-link:hover {
+  color: #58a6ff; /* Цвет при наведении на ссылки */
+}
+
+input.form-control:focus {
+  outline: none; /* Убирает стандартную обводку */
+  box-shadow: none; /* Убирает тень */
+  border-color: #1f6feb; /* Устанавливает цвет рамки при фокусе (по желанию) */
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для контейнера */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  margin-bottom: 15px; /* Отступ между сообщениями */
+  padding: 15px 20px; /* Отступ внутри сообщения */
+  border-radius: 10px; /* Закругленные углы */
+  position: relative; /* Для позиционирования времени сообщения */
+  animation: fadeIn 0.3s ease-in-out; /* Анимация появления */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Тень для сообщения */
+}
+
+.message.sender {
+  background: linear-gradient(135deg, #1f6feb, #007bff); /* Градиент для отправленных сообщений */
+  color: white; /* Цвет текста для отправленных сообщений */
+  text-align: right; /* Выравнивание текста вправо */
+}
+
+.message.receiver {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); /* Градиент для полученных сообщений */
+  color: #c9d1d9; /* Цвет текста для полученных сообщений */
+  text-align: left; /* Выравнивание текста влево */
+}
+
+.message-time {
+  font-size: 0.7em; /* Уменьшенный размер шрифта */
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 5px; /* Отступ от нижней части */
+  right: 15px; /* Отступ от правой части */
+  color: rgba(255, 255, 255, 0.6); /* Полупрозрачный цвет для времени */
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
