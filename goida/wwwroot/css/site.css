@@ -12,36 +12,36 @@ html {
 
 body {
   height: 100%;
-  background-color: #010409; /* Основной фон */
-  color: #c9d1d9; /* Цвет текста */
+  background-color: #010409; 
+  color: #4292f0; 
   border-color: #58a6ff;
 }
 
-/* Навигационная панель */
+
 .navbar {
   background-color: #010409 !important;
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-  color: #c9d1d9; /* Основной цвет текста */
+  color: #c9d1d9; 
 }
 
 .navbar .nav-link:hover {
-  color: #58a6ff; /* Цвет при наведении */
+  color: #58a6ff; 
 }
 
-/* Подгоняем чат под существующую палитру */
+
 .chat-container {
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.05); /* Лёгкий прозрачный фон */
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень для контейнера */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Сообщения */
+
 .message {
   margin-bottom: 15px;
   padding: 15px 20px;
@@ -52,27 +52,27 @@ body {
 }
 
 .message.sender {
-  background: linear-gradient(135deg, #1f6feb, #007bff); /* Цвет отправителя */
+  background: linear-gradient(135deg, #1f6feb, #007bff); 
   color: white;
   text-align: right;
 }
 
 .message.receiver {
-  background-color: rgba(255, 255, 255, 0.1); /* Тёмный фон для получателя */
+  background-color: rgba(255, 255, 255, 0.1); 
   color: #c9d1d9;
   text-align: left;
 }
 
-/* Время сообщения */
+
 .message-time {
   font-size: 0.7em;
   position: absolute;
   bottom: 5px;
   right: 15px;
-  color: rgba(255, 255, 255, 0.6); /* Полупрозрачный текст */
+  color: rgba(255, 255, 255, 0.6); 
 }
 
-/* Ссылки на пользователей */
+
 .username {
   color: #58a6ff;
   text-decoration: none;
@@ -82,53 +82,69 @@ body {
   text-decoration: underline;
 }
 
-/* Анимация появления */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Поля ввода */
+
 .form-control {
-  background-color: #010409; /* Фон инпутов */
-  color: #c9d1d9; /* Цвет текста */
-  border: 1px solid #58a6ff; /* Цвет рамки */
+  background-color: #010409; 
+  color: #c9d1d9; 
+  border: 1px solid #58a6ff;
 }
 
 .form-control:focus {
-  background-color: #010409; /* Фон при фокусе */
-  border-color: #58a6ff; /* Цвет рамки при фокусе */
-  box-shadow: 0 0 0 0.2rem rgba(40, 167, 255, 0.25); /* Тень при фокусе */
+  background-color: #010409; 
+  border-color: #58a6ff; 
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 255, 0.25);
   color: #c9d1d9;
 }
 
 /* Ошибки */
 .text-danger {
-  color: #ff4d4f; /* Цвет ошибок */
+  color: #ff4d4f;
 }
 .card-body {
-  background-color: #010409; /* Темный фон для блока данных пользователя */
-  padding: 20px; /* Внутренний отступ */
-  color: #c9d1d9; /* Цвет текста */
-  border: none; /* Убираем обводку */
+  background-color: #010409; 
+  padding: 20px; 
+  color: #c9d1d9;
+  border: none; 
   box-shadow: none;
 }
 
 .card-body h5 {
-  color: #58a6ff; /* Акцентный цвет для заголовков */
+  color: #58a6ff; 
   margin-bottom: 15px;
 }
 
 .card-body p {
-  color: #c9d1d9; /* Основной цвет текста */
-  line-height: 1.6; /* Увеличенная межстрочная высота для удобочитаемости */
+  color: #c9d1d9; 
+  line-height: 1.6;
 }
 
 .card-body a {
-  color: #58a6ff; /* Цвет ссылок */
+  color: #58a6ff; 
   text-decoration: none;
 }
 
 .card-body a:hover {
-  text-decoration: underline; /* Подчеркивание при наведении */
+  text-decoration: underline;
+}
+
+.delete-icon {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 12px;
+  outline: none;
+}
+.delete-icon:focus {
+  outline: none;
+}
+.delete-icon:hover {
+  color: #a71d2a;
 }

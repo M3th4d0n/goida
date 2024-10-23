@@ -10,7 +10,7 @@ namespace goida.Models
 		public ChatContext(DbContextOptions<ChatContext> options) : base(options) { }
 
 		public DbSet<Message> Messages { get; set; }
-
+		
         public DbSet<User> Users { get; set; }
 
     }

@@ -16,7 +16,7 @@ namespace goida.Controllers
 
 
         private static List<string> messages = new List<string>();
-
+	
         public IActionResult Index()
         {
 	        string userName = HttpContext.Session.GetString("UserName");
@@ -71,6 +71,28 @@ namespace goida.Controllers
 	        return RedirectToAction("Index", "Chat");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DeleteMessage(int id)
+        {
+	        // Проверяем, является ли пользователь администратором
+	        if (HttpContext.Session.GetString("UserRole") != "admin")
+	        {
+		        return Forbid();  // Если роль не admin, доступ запрещен
+	        }
+
+	        // Ищем сообщение по ID
+	        var message = await _context.Messages.FindAsync(id);
+	        if (message == null)
+	        {
+		        return NotFound();  // Сообщение не найдено
+	        }
+
+	        // Удаляем сообщение
+	        _context.Messages.Remove(message);
+	        await _context.SaveChangesAsync();  // Сохраняем изменения
+
+	        return RedirectToAction("Index");
+        }
 
 
 		[HttpGet]

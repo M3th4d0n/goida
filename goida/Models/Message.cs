@@ -4,10 +4,11 @@ namespace goida.Models
 {
     public class Message
     {
-        public int Id { get; set; } // Уникальный идентификатор сообщения
-        public string UserName { get; set; } // Имя пользователя, отправившего сообщение
-        public string Content { get; set; } // Содержимое сообщения
-        public DateTime Time { get; set; } // Время отправки сообщения
-        public int UserId { get; set; } // Уникальный идентификатор пользователя (добавлено)
+        public int Id { get; set; }
+        public string Content { get; set; }
+        public string UserName { get; set; }
+        public DateTime Time { get; set; }
+        public int UserId { get; set; }
     }
+
 }

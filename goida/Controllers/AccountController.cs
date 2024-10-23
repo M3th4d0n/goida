@@ -57,21 +57,21 @@ namespace goida.Controllers
         [HttpPost]
         public IActionResult Login(string nickname, string password) 
         {
-            // Ищем пользователя по никнейму и паролю
+            
             var user = _context.Users.FirstOrDefault(u => u.Nickname == nickname && u.Password == password); 
 
             if (user != null)
             {
-                // Устанавливаем значения в сессии
+                
                 HttpContext.Session.SetString("UserName", user.Nickname);
-                HttpContext.Session.SetString("UserRole", user.Role); // Сохраняем роль пользователя в сессии
+                HttpContext.Session.SetString("UserRole", user.Role);
 
                 return RedirectToAction("Index", "Chat");
             }
 
-            // Если пользователь не найден, можно добавить сообщение об ошибке
+            
             ModelState.AddModelError("", "Invalid login attempt.");
-            return View(); // Вернуть ту же страницу входа, чтобы показать ошибку
+            return View(); 
         }
 
 
