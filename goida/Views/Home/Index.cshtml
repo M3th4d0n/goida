@@ -22,34 +22,30 @@ var quotes = new List<string>
 Random random = new Random();
 var randomQuote = quotes[random.Next(quotes.Count)];
 }
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/goida.styles.css" asp-append-version="true" />
-<div id="loader" class="loader">
-    <pre id="debug-output" class="debug-output"></pre>
-    
+<script src="https://cdn.tailwindcss.com"></script> <!-- Подключаем Tailwind -->
+<div id="loader" class="fixed inset-0 bg-gray-900 flex items-center justify-center z-50 transition-opacity duration-1000">
+    <pre id="debug-output" class="text-white font-mono text-left whitespace-pre-wrap leading-relaxed max-w-lg"></pre>
 </div>
 
-<div class="container mt-5 content" id="content" style="display: none;">
-    <h1 class="display-4 text-center text-white mb-4">Welcome to goida</h1>
+<div class="container mx-auto px-4 mt-12 hidden" id="content">
+    <h1 class="text-4xl font-bold text-center text-blue-400 mb-8">Welcome to goida</h1>
 
     @if (Context.Session.GetString("UserName") != null)
     {
-    <p class="text-center text-light">Welcome, <strong>@Context.Session.GetString("UserName")</strong>!</p>
+    <p class="text-center text-gray-300">Welcome, <strong>@Context.Session.GetString("UserName")</strong>!</p>
     <div class="text-center mt-3">
-        <a href="/Account/Logout" class="btn btn-dark">Logout</a>
+        <a href="/Account/Logout" class="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded">Logout</a>
     </div>
     }
     else
     {
     <div class="text-center">
-        <a href="/Account/Login" class="btn btn-dark">Login</a>
-        <a href="/Account/Register" class="btn btn-dark">Register</a>
+        <a href="/Account/Login" class="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded">Login</a>
+        <a href="/Account/Register" class="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded ml-3">Register</a>
     </div>
-
-    <p class="text-center text-muted mt-4">Please log in or register to continue.</p>
-    
+    <p class="text-center text-gray-500 mt-4">Please log in or register to continue.</p>
     }
-    <p class="text-center text-muted mt-4">@randomQuote</p>
+    <p class="text-center text-gray-400 mt-4">@randomQuote</p>
 </div>
 
 <script>
@@ -61,7 +57,7 @@ var randomQuote = quotes[random.Next(quotes.Count)];
         "Minifying assets...",
         "Optimizing performance...",
         "я надеюсь это не будут читать",
-        "ну а в друг.. гойда!",
+        "ну а вдруг.. гойда!",
         "Ready to go!",
     ];
 
@@ -80,7 +76,7 @@ var randomQuote = quotes[random.Next(quotes.Count)];
                 loader.style.opacity = '0';
                 setTimeout(() => {
                     loader.style.display = 'none';
-                    content.style.display = 'block';
+                    content.classList.remove('hidden');
                     document.body.style.overflow = 'auto';
                 }, 200);
             }, 200);
@@ -89,40 +85,3 @@ var randomQuote = quotes[random.Next(quotes.Count)];
 
     window.onload = displayMessages;
 </script>
-
-<style>
-    body {
-        background: #010409;
-        color: #c9d1d9;
-        font-family: 'Arial', sans-serif;
-        overflow: hidden;
-    }
-
-    .loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(1, 4, 9, 0.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        opacity: 1;
-        transition: opacity 1s ease;
-    }
-
-    .debug-output {
-        color: #c9d1d9;
-        font-family: 'Courier New', Courier, monospace;
-        white-space: pre-wrap;
-        line-height: 1.5;
-        max-width: 600px;
-        text-align: left;
-    }
-
-    .content {
-        display: none;
-    }
-</style>

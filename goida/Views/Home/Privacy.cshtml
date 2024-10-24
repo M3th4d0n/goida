@@ -1,37 +1,54 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
+<script src="https://cdn.tailwindcss.com"></script> <!-- Подключаем Tailwind CSS -->
 
-<div>
-    <h2>Welcome to the Chaos Zone! 🎉🍕</h2>
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-blue-400 mb-6">@ViewData["Title"]</h1>
 
-    <p>Hello! If you’re reading this, you’ve stumbled into my wild corner of the internet, where code meets chaos and ideas fly faster than I can catch them. But let’s talk about something serious for a moment—your privacy.</p>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl text-yellow-400 mb-4">Welcome to the Chaos Zone! 🎉🍕</h2>
 
-    <h3>What’s happening on this site? <small><small><small><small> no idea what this is or why</small></small></small></small></h3>
-    <ul>
-        <li><strong>Ideas on the Edge of Madness</strong>: Sometimes I post projects and code here that seemed brilliant to me at 2 AM. How useful are they? Time will tell!</li>
-        <li><strong>A Collection of Bugs</strong>: Here you can find bugs of all kinds and sizes. Most of them are the result of experimentation and creativity.</li>
-        <li><strong>Weird Functions</strong>: I have a habit of writing functions just because "why not?". Will they be finished? Well, someday. Maybe.</li>
-        <li><strong>"Unique" Code</strong>: This site may contain some of the most interesting and strange pieces of code you've ever seen. However, not all of them work as intended.</li>
-    </ul>
+        <p class="text-gray-300 mb-6">
+            Hello! If you’re reading this, you’ve stumbled into my wild corner of the internet, where code meets chaos 
+            and ideas fly faster than I can catch them. But let’s talk about something serious for a moment—your privacy.
+        </p>
 
-    <h3>What do we collect?</h3>
-    <p>We do not collect any unnecessary data. However, for certain functions to work properly (like the chat), the following may be used:</p>
-    <ul>
-        <li><strong>Nickname and Password</strong>: For logging into the site.</li>
-        <li><strong>Cookies</strong>: For storing sessions and ensuring stable operation.</li>
-    </ul>
+        <h3 class="text-2xl text-green-400 mb-4">What’s happening on this site? 
+            <small class="text-xs text-gray-400">(no idea what this is or why)</small>
+        </h3>
 
-    <h3>How do we use your data?</h3>
-    <p>Your data is used for:</p>
-    <ul>
-        <li>Authorization: Nickname and password are used for logging into the site.</li>
-        <li>Service Improvement: Cookies help remember your preferences and maintain your session.</li>
-    </ul>
+        <ul class="list-disc list-inside text-gray-300 mb-6">
+            <li class="mb-2"><strong class="text-white">Ideas on the Edge of Madness</strong>: Sometimes I post projects 
+            and code here that seemed brilliant to me at 2 AM. How useful are they? Time will tell!</li>
+            <li class="mb-2"><strong class="text-white">A Collection of Bugs</strong>: Here you can find bugs of all kinds 
+            and sizes. Most of them are the result of experimentation and creativity.</li>
+            <li class="mb-2"><strong class="text-white">Weird Functions</strong>: I have a habit of writing functions just 
+            because "why not?". Will they be finished? Well, someday. Maybe.</li>
+            <li class="mb-2"><strong class="text-white">"Unique" Code</strong>: This site may contain some of the most 
+            interesting and strange pieces of code you've ever seen. However, not all of them work as intended.</li>
+        </ul>
 
-    <h3>Disclaimer</h3>
-    <p>I do not guarantee that anything on this site works correctly or reliably. If you accidentally found something useful here—either it was magic or incredible luck.</p>
+        <h3 class="text-2xl text-green-400 mb-4">What do we collect?</h3>
+        <p class="text-gray-300 mb-4">
+            We do not collect any unnecessary data. However, for certain functions to work properly (like the chat), the following may be used:
+        </p>
+        <ul class="list-disc list-inside text-gray-300 mb-6">
+            <li class="mb-2"><strong class="text-white">Nickname and Password</strong>: For logging into the site.</li>
+            <li class="mb-2"><strong class="text-white">Cookies</strong>: For storing sessions and ensuring stable operation.</li>
+        </ul>
 
-    <p>Updates and fixes? Of course, as soon as I figure out what exactly I did.</p>
+        <h3 class="text-2xl text-green-400 mb-4">How do we use your data?</h3>
+        <p class="text-gray-300 mb-4">Your data is used for:</p>
+        <ul class="list-disc list-inside text-gray-300 mb-6">
+            <li class="mb-2">Authorization: Nickname and password are used for logging into the site.</li>
+            <li class="mb-2">Service Improvement: Cookies help remember your preferences and maintain your session.</li>
+        </ul>
+
+        <h3 class="text-2xl text-red-400 mb-4">Disclaimer</h3>
+        <p class="text-gray-300 mb-6">
+            I do not guarantee that anything on this site works correctly or reliably. If you accidentally found something useful here—either it was magic or incredible luck.
+        </p>
+        <p class="text-gray-300">Updates and fixes? Of course, as soon as I figure out what exactly I did.</p>
+    </div>
 </div>

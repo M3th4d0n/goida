@@ -2,8 +2,21 @@
     ViewBag.Title = "DM Created";
 }
 
-<h2>Direct Message Created!</h2>
-<p>Share this link with the person you want to chat with:</p>
-<p><a href="@ViewBag.ChatLink">@ViewBag.ChatLink</a></p>
 
-<a href="@Url.Action("Index", "Chat")" class="btn btn-primary">Back to Chat</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div class="container mx-auto mt-10 px-4">
+    <h2 class="text-3xl font-bold mb-4">Direct Message Created!</h2>
+    <p class="text-lg mb-2">Share this link with the person you want to chat with:</p>
+    <p class="text-blue-600 underline mb-4">
+        <a href="@ViewBag.ChatLink">@ViewBag.ChatLink</a>
+    </p>
+
+    <a href="@Url.Action("Index", "Chat")" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition duration-300">
+        Back to Chat
+    </a>
+</div>

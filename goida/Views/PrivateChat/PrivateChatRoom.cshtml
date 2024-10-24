@@ -6,34 +6,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Private Chat - @Model.ChatCode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="private-chat-container">
-    <h2>Private Chat: @Model.ChatCode</h2>
+<body class="bg-gray-100">
+<div class="container mx-auto mt-10 px-4 bg-white rounded-lg shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">Private Chat: @Model.ChatCode</h2>
 
-    <form method="post" action="/PrivateChat/SendPrivateMessage" class="mb-3">
-        <div class="input-group">
-            <input type="text" name="messageContent" class="form-control" placeholder="Type your message" required />
-            <div class="input-group-append">
-                <button class="btn btn-dark" type="submit">Send</button>
-            </div>
-        </div>
+    <!-- Chat form -->
+    <form method="post" action="/PrivateChat/SendPrivateMessage" class="mb-6 flex space-x-4">
+        <input type="text" name="messageContent" class="flex-grow bg-gray-700 text-gray-100 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Type your message" required />
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition duration-300" type="submit">
+            <i class="fas fa-paper-plane"></i> Send
+        </button>
     </form>
 
-    <div class="chat-messages">
+    <!-- Chat messages -->
+    <div class="space-y-4">
         @if (Model.Messages != null && Model.Messages.Any())
         {
             foreach (var message in Model.Messages.OrderByDescending(m => m.SentAt))
             {
-                <div class="message">
-                    <strong>@message.User.Nickname</strong>: @message.Content
-                    <div class="message-time"><em>(@message.SentAt)</em></div>
+                <div class="p-4 rounded-lg relative @((message.User.Nickname == "YourNickname") ? "bg-blue-600 text-white text-right" : "bg-gray-700 text-gray-100")">
+                    @if (Context.Session.GetString("UserRole") == "admin")
+                    {
+                        <form method="post" action="/PrivateChat/DeleteMessage" class="absolute top-2 right-2">
+                            <input type="hidden" name="id" value="@message.Id" />
+                            <button type="submit" class="text-red-500 hover:text-red-700 text-sm" title="Delete message">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                    }
+                    <div class="flex justify-between">
+                        <strong><a class="hover:underline" href="/user/@message.UserId">@message.User.Nickname</a></strong>
+                    </div>
+                    <p>@message.Content</p>
+                    <em class="text-sm text-gray-400 absolute bottom-2 right-2">@message.SentAt.ToString("f")</em>
                 </div>
             }
         }
         else
         {
-            <div class="message text-center">No messages yet.</div>
+            <div class="text-center text-gray-500">No messages yet.</div>
         }
     </div>
 </div>

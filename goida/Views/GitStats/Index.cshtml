@@ -4,42 +4,44 @@
     int lineCount = ViewData["LineCount"] != null ? (int)ViewData["LineCount"] : 0;
     var commits = ViewData["Commits"] as List<goida.Models.GitHubService.Commit>;
 }
+
 <head>
     <title>GitHub Repository Stats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<div>
-    <h1>GitHub Repository Statistics</h1>
-    <p>Total Commits: <span id="commitCount">@commitCount</span></p>
-    <p>Total Lines of Code: ~<span id="lineCount">@lineCount</span></p>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/goida.styles.css" asp-append-version="true" />
-    
-    <h2>Commit History</h2>
+
+<div class="container mx-auto mt-10 px-4">
+    <h1 class="text-3xl font-bold mb-4">GitHub Repository Statistics</h1>
+    <p class="text-lg">Total Commits: <span id="commitCount" class="font-semibold">@commitCount</span></p>
+    <p class="text-lg">Total Lines of Code: ~<span id="lineCount" class="font-semibold">@lineCount</span></p>
+
+    <h2 class="text-2xl font-semibold mt-6">Commit History</h2>
     @if (commits != null && commits.Count > 0)
     {
-        <table>
+        <table class="min-w-full bg-dark border border-gray-300 mt-4">
             <thead>
-            <tr>
-                <th>Author</th>
-                <th>Message</th>
-                <th>Date</th>
-            </tr>
+                <tr class="bg-gray-200 text-gray-700">
+                    <th class="py-2 px-4 border-b">Author</th>
+                    <th class="py-2 px-4 border-b">Message</th>
+                    <th class="py-2 px-4 border-b">Date</th>
+                </tr>
             </thead>
             <tbody>
-            @foreach (var commit in commits)
-            {
-                <tr>
-                    <td>@commit.Author</td>
-                    <td>@(commit.Message.Length > 50 ? commit.Message.Substring(0, 50) + "..." : commit.Message)</td>
-                    <td>@commit.Date.AddHours(3).ToString("dd MMM HH:mm")</td>
-                </tr>
-            }
+                @foreach (var commit in commits)
+                {
+                    <tr class="hover:bg-dark-100">
+                        <td class="py-2 px-4 border-b">@commit.Author</td>
+                        <td class="py-2 px-4 border-b">
+                            @(commit.Message.Length > 50 ? commit.Message.Substring(0, 50) + "..." : commit.Message)
+                        </td>
+                        <td class="py-2 px-4 border-b">@commit.Date.AddHours(3).ToString("dd MMM HH:mm")</td>
+                    </tr>
+                }
             </tbody>
         </table>
     }
     else
     {
-        <p>No commits found.</p>
+        <p class="mt-4 text-gray-500">No commits found.</p>
     }
 </div>
-

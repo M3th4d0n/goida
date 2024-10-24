@@ -1,32 +1,37 @@
 ﻿@{
     ViewData["Title"] = "Invisible TODO List";
 }
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/goida.styles.css" asp-append-version="true" />
+<script src="https://cdn.tailwindcss.com"></script> <!-- Подключаем Tailwind CSS -->
+
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-gray-100 mb-6">@ViewData["Title"]</h1>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl text-yellow-400 mb-4">TODO List (oh shit, why im created this page?)</h2>
+
+        <ul class="list-disc list-inside space-y-3">
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Figure out what this line of code actually does</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Debug the debug function</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Optimize the code that's already fast enough</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Write documentation that nobody will read</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Find a bug and convince others it’s a feature</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Refactor the spaghetti code into... gourmet spaghetti</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Fix a bug by commenting out the problematic line (again)</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Deploy the website, pray, and close the laptop</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Add random console logs just for fun</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Rename variables to something more confusing</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">"Holy mb fix now?" — make this commit message a reality</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Debug at 6 a.m. because sleep is overrated</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">"угабуга" — explain this commit to future self</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Start a new feature, leave it 95% finished</li>
+            <li class="text-gray-500 hover:text-gray-300 transition duration-300">Create a function that does nothing but look important</li>
+        </ul>
+    </div>
+</div>
+
 <style>
     html {
         height: 100%;
+        background-color: #0d1117;
     }
 </style>
-<h1>@ViewData["Title"]</h1>
-<div class="todo-list">
-    
-    <h2>TODO List (Shhh... It's a Secret) 🤫</h2>
-    <ul>
-        <li class="hidden-task">Figure out what this line of code actually does</li>
-        <li class="hidden-task">Debug the debug function</li>
-        <li class="hidden-task">Optimize the code that's already fast enough</li>
-        <li class="hidden-task">Write documentation that nobody will read</li>
-        <li class="hidden-task">Find a bug and convince others it’s a feature</li>
-        <li class="hidden-task">Refactor the spaghetti code into... gourmet spaghetti</li>
-        <li class="hidden-task">Fix a bug by commenting out the problematic line (again)</li>
-        <li class="hidden-task">Deploy the website, pray, and close the laptop</li>
-        <li class="hidden-task">Add random console logs just for fun</li>
-        <li class="hidden-task">Rename variables to something more confusing</li>
-        <li class="hidden-task">"Holy mb fix now?" — make this commit message a reality</li>
-        <li class="hidden-task">Debug at 6 a.m. because sleep is overrated</li>
-        <li class="hidden-task">"угабуга" — explain this commit to future self</li>
-        <li class="hidden-task">Start a new feature, leave it 95% finished</li>
-        <li class="hidden-task">Create a function that does nothing but look important</li>
-    </ul>
-</div>
