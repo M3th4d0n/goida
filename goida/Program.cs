@@ -3,16 +3,18 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Net;
 using System.Net.Http.Headers;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
-
+var gitHubToken = builder.Configuration["GitHub:Token"];
 
 
 
 builder.Services.AddHttpClient<GitHubService>(client =>
 {
     client.DefaultRequestHeaders.Add("User-Agent", "C# App");
-    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "thx github security<3");
+    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", gitHubToken);
 });
 
 builder.Services.AddMemoryCache(); // Добавляем IMemoryCache

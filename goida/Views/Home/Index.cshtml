@@ -22,9 +22,11 @@ var quotes = new List<string>
 Random random = new Random();
 var randomQuote = quotes[random.Next(quotes.Count)];
 }
-
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/goida.styles.css" asp-append-version="true" />
 <div id="loader" class="loader">
     <pre id="debug-output" class="debug-output"></pre>
+    
 </div>
 
 <div class="container mt-5 content" id="content" style="display: none;">

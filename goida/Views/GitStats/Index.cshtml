@@ -2,34 +2,17 @@
     Layout = "_Layout";
     int commitCount = ViewData["CommitCount"] != null ? (int)ViewData["CommitCount"] : 0;
     int lineCount = ViewData["LineCount"] != null ? (int)ViewData["LineCount"] : 0;
-    var commits = ViewData["Commits"] as List<goida.Models.GitHubService.Commit>; // Приводим к нужному типу
+    var commits = ViewData["Commits"] as List<goida.Models.GitHubService.Commit>;
 }
-<html>
-<!DOCTYPE html>
 <head>
     <title>GitHub Repository Stats</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 8px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-
-        td {
-            white-space: nowrap; /* Предотвращаем перенос строк */
-        }
-    </style>
 </head>
-<body>
 <div>
     <h1>GitHub Repository Statistics</h1>
     <p>Total Commits: <span id="commitCount">@commitCount</span></p>
     <p>Total Lines of Code: ~<span id="lineCount">@lineCount</span></p>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/goida.styles.css" asp-append-version="true" />
     
     <h2>Commit History</h2>
     @if (commits != null && commits.Count > 0)
@@ -59,5 +42,4 @@
         <p>No commits found.</p>
     }
 </div>
-</body>
-</html>
+

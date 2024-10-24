@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Invisible TODO List";
+}
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/goida.styles.css" asp-append-version="true" />
+<style>
+    html {
+        height: 100%;
+    }
+</style>
+<h1>@ViewData["Title"]</h1>
+<div class="todo-list">
+    
+    <h2>TODO List (Shhh... It's a Secret) 🤫</h2>
+    <ul>
+        <li class="hidden-task">Figure out what this line of code actually does</li>
+        <li class="hidden-task">Debug the debug function</li>
+        <li class="hidden-task">Optimize the code that's already fast enough</li>
+        <li class="hidden-task">Write documentation that nobody will read</li>
+        <li class="hidden-task">Find a bug and convince others it’s a feature</li>
+        <li class="hidden-task">Refactor the spaghetti code into... gourmet spaghetti</li>
+        <li class="hidden-task">Fix a bug by commenting out the problematic line (again)</li>
+        <li class="hidden-task">Deploy the website, pray, and close the laptop</li>
+        <li class="hidden-task">Add random console logs just for fun</li>
+        <li class="hidden-task">Rename variables to something more confusing</li>
+        <li class="hidden-task">"Holy mb fix now?" — make this commit message a reality</li>
+        <li class="hidden-task">Debug at 6 a.m. because sleep is overrated</li>
+        <li class="hidden-task">"угабуга" — explain this commit to future self</li>
+        <li class="hidden-task">Start a new feature, leave it 95% finished</li>
+        <li class="hidden-task">Create a function that does nothing but look important</li>
+    </ul>
+</div>

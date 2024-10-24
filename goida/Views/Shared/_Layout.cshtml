@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-ara="" asp-controller="GitStats" asp-action="Index">GitStats</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-ara="" asp-controller="Home" asp-action="tododoList">tododoList</a>
+                    </li>
                 </ul>
 
                 @if (Context.Session.GetString("UserName") != null)
